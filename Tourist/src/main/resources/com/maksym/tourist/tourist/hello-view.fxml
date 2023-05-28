@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="112.0" prefWidth="608.0" style="-fx-background-color: #00008b;">
+         <children>
+            <Label layoutX="8.0" layoutY="6.0" text="Maksym Babii" textFill="WHITE">
+               <font>
+                  <Font name="Apple Symbols" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="196.0" layoutY="127.0" text="Введіть країну для виведення даних" />
+      <TextField fx:id="EnterField" layoutX="220.0" layoutY="150.0" />
+      <Button fx:id="SendButton" layoutX="237.0" layoutY="185.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="127.0" text="Виконати" />
+      <TableView fx:id="TouristTable" layoutX="151.0" layoutY="238.0" prefHeight="260.0" prefWidth="303.0">
+        <columns>
+            <TableColumn fx:id="Cities" prefWidth="75.0" text="Cities" />
+          <TableColumn fx:id="PopularPlaces" prefWidth="95.0" text="PopularPlaces" />
+          <TableColumn fx:id="Pab" prefWidth="55.0" text="Pab" />
+            <TableColumn fx:id="Hotel" prefWidth="75.0" text="Hotel" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
